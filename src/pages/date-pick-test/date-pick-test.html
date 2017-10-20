@@ -1,0 +1,21 @@
+<!--
+  Generated template for the DatePickTestPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+    <ion-navbar>
+        <ion-title>date-pick-test</ion-title>
+    </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+    <ion-item>
+        <ion-label>label</ion-label>
+        <ion-datetime displayFormat="YYYY年MM月DD日" max="2018-04-10" min="2016-02-10" pickerFormat="YYYY-MM-DD" [(ngModel)]="myTime" (ngModleChange)="myTime=$event;changeEvent($event)"></ion-datetime>
+    </ion-item>
+</ion-content>
